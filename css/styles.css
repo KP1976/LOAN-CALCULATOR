@@ -45,6 +45,13 @@ body {
   }
 }
 
+.loan-result {
+  display: none;
+}
+.loan-result.on {
+  display: block;
+}
+
 .loan-title, .loan-result-title {
   color: var(--red);
   font-size: 2rem;
@@ -56,7 +63,7 @@ body {
 .loan-form {
   display: grid;
   grid-row-gap: var(--pad-box);
-  margin: 3rem 0;
+  margin: 3rem 0 2rem;
 }
 
 .loan-input-wrapper {
@@ -83,7 +90,6 @@ body {
   border-radius: var(--radius) 0 0 var(--radius);
   color: var(--white);
   display: block;
-  line-height: 1;
   padding: var(--pad-input);
   text-align: center;
   width: 4.5rem;
@@ -93,12 +99,28 @@ body {
   background: var(--white);
   border: 1px solid var(--black);
   border-radius: 0 var(--radius) var(--radius) 0;
+  font-size: 1rem;
   outline: none;
   padding: var(--pad-input);
   width: 100%;
 }
 .loan-input[type="number"] {
   border-radius: var(--radius);
+}
+
+.warning {
+  background: var(--red);
+  border-radius: var(--radius);
+  color: var(--white);
+  display: none;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-top: 2rem;
+  padding: var(--pad-input);
+  text-align: center;
+}
+.warning.on {
+  display: block;
 }
 
 .calculate-btn {
@@ -121,8 +143,13 @@ body {
 }
 
 .loan-spinner {
+  -ms-flex-item-align: center;
+      align-self: center;
   display: none;
   padding: var(--pad-box);
+}
+.loan-spinner.on {
+  display: block;
 }
 
 .fa-spinner {
@@ -149,7 +176,6 @@ body {
   background: var(--white);
   border: 1px solid var(--black);
   border-radius: var(--radius);
-  line-height: 1.15;
   margin-bottom: 1rem;
   outline: none;
   padding: var(--pad-input);

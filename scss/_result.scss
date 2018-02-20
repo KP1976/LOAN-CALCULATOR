@@ -1,6 +1,10 @@
 .loan-spinner {
+  align-self: center;
   display: none;
   padding: var(--pad-box);
+  &.on {
+    display: block;
+  }
 }
 
 .fa-spinner {
@@ -27,7 +31,6 @@
   background: var(--white);
   border: 1px solid var(--black);
   border-radius: var(--radius);
-  line-height: 1.15;
   margin-bottom: 1rem;
   outline: none;
   padding: var(--pad-input);

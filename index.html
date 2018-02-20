@@ -11,39 +11,42 @@
   <body>
     <main class="loan-box">
       <h1 class="loan-title">Kalkulator Pożyczkowy</h1>
+      <div class="warning">Musisz wpisać liczbę!</div>
       <form class="loan-form">
         <div class="loan-input-wrapper">
           <label class="loan-label">Wielkość pożyczki</label>
           <span class="loan-icon">PLN</span>
-          <input class="loan-input" type="text">
+          <input class="loan-input amount" type="text">
         </div>
         <div class="loan-input-wrapper">
           <label class="loan-label">Na jaki procent pożyczka</label>
           <span class="loan-icon">%</span>
-          <input class="loan-input" type="text">
+          <input class="loan-input percentages" type="text">
         </div>
         <div class="loan-input-wrapper">
           <label class="loan-label">Na ile lat pożyczka</label>
-          <input class="loan-input" type="number">
+          <input class="loan-input years" type="number">
         </div>
       </form>
       <button class="calculate-btn">Policz</button>
     </main>
 
-    <!-- <div class="loan-spinner">
+    <div class="loan-spinner">
       <i class="fas fa-spinner fa-spin"></i>
-    </div> -->
+    </div>
 
     <section class="loan-result">
       <h1 class="loan-result-title">Wynik</h1>
       <div class="result-wrapper">
         <h2 class="result-subtitle">Miesięczna rata</h2>
-        <div class="result monthly-payment">d</div>
+        <div class="result monthly-payment"></div>
         <h2 class="result-subtitle">Całkowita kwota pożyczki</h2>
-        <div class="result total-payment">d</div>
+        <div class="result total-payment"></div>
         <h2 class="result-subtitle">Zysk pożyczkodawcy</h2>
-        <div class="result total-interest">d</div>
+        <div class="result total-interest"></div>
       </div>
     </section>
   </body>
+  <script src="js/vars.js"></script>
+  <script src="js/calc.js"></script>
 </html>
