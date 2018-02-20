@@ -1,0 +1,40 @@
+:root {
+  // KOLORY
+  --white: #eee;
+  --black: #333;
+  --red: #b11;
+
+  // FONTY
+  --font: 'Open Sans', sans-serif;
+
+  // ODSTĘPY, MARGINESY
+  --pad-box: 2rem;
+  --pad-input: 0.6rem 1rem;
+
+  // BORDERY
+  --radius: 0.2rem;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: var(--font);
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-content: center;
+  align-items: start;
+  background: var(--black);
+  color: var(--black);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 30rem));
+  grid-gap: 2rem;
+  justify-content: center;
+  min-height: 100vh;
+  padding: var(--pad-box) 0; 
+}
+
+@import "mixins";
+@import "loans";
+@import "result";

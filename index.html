@@ -4,10 +4,46 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Kalkulator Pożyczkowy</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Vollkorn:400,700&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
   </head>
   <body>
-   
+    <main class="loan-box">
+      <h1 class="loan-title">Kalkulator Pożyczkowy</h1>
+      <form class="loan-form">
+        <div class="loan-input-wrapper">
+          <label class="loan-label">Wielkość pożyczki</label>
+          <span class="loan-icon">PLN</span>
+          <input class="loan-input" type="text">
+        </div>
+        <div class="loan-input-wrapper">
+          <label class="loan-label">Na jaki procent pożyczka</label>
+          <span class="loan-icon">%</span>
+          <input class="loan-input" type="text">
+        </div>
+        <div class="loan-input-wrapper">
+          <label class="loan-label">Na ile lat pożyczka</label>
+          <input class="loan-input" type="number">
+        </div>
+      </form>
+      <button class="calculate-btn">Policz</button>
+    </main>
+
+    <!-- <div class="loan-spinner">
+      <i class="fas fa-spinner fa-spin"></i>
+    </div> -->
+
+    <section class="loan-result">
+      <h1 class="loan-result-title">Wynik</h1>
+      <div class="result-wrapper">
+        <h2 class="result-subtitle">Miesięczna rata</h2>
+        <div class="result monthly-payment">d</div>
+        <h2 class="result-subtitle">Całkowita kwota pożyczki</h2>
+        <div class="result total-payment">d</div>
+        <h2 class="result-subtitle">Zysk pożyczkodawcy</h2>
+        <div class="result total-interest">d</div>
+      </div>
+    </section>
   </body>
 </html>

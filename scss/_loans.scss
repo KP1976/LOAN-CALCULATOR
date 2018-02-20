@@ -1,0 +1,72 @@
+.loan-box, .loan-result {
+  @include box;
+  @include mq(480px);
+}
+
+.loan-title, .loan-result-title {
+  @include title(2rem);
+}
+
+.loan-form {
+  display: grid;
+  grid-row-gap: var(--pad-box);
+  margin: 3rem 0;
+}
+
+.loan-input-wrapper {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.loan-label {
+  color: var(--red);
+  position: absolute;
+  font-size: .8rem;
+  text-transform: uppercase;
+  top: -1.4rem;
+}
+
+.loan-icon {
+  background: var(--red);
+  border-bottom: 1px solid var(--black);
+  border-left: 1px solid var(--black);
+  border-top: 1px solid var(--black);
+  border-radius: var(--radius) 0 0 var(--radius);
+  color: var(--white);
+  display: block;
+  line-height: 1;
+  padding: var(--pad-input);
+  text-align: center;
+  width: 4.5rem;
+}
+
+.loan-input {
+  background: var(--white);
+  border: 1px solid var(--black);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  outline: none;
+  padding: var(--pad-input);
+  width: 100%;
+  &[type="number"] {
+    border-radius: var(--radius);
+  }
+}
+
+.calculate-btn {
+  background: var(--red);
+  border: none;
+  border-radius: var(--radius);
+  color: var(--white);
+  cursor: pointer;
+  outline: none;
+  font-size: 1.2rem;
+  font-weight: 800;
+  padding: var(--pad-input);
+  text-transform: uppercase;
+  transition: background-color 0.2s ease-in-out;
+  width: 100%;
+  &:hover {
+    background: var(--black);
+  }
+}
