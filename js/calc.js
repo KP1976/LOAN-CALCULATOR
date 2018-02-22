@@ -1,6 +1,4 @@
 const Calc = (_=> {
-  vars = {};
-
   function countLoan() {
     const amountLoanValue = vars.amountLoan.value;
     const percentagesValue = vars.percentages.value;
